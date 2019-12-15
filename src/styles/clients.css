@@ -1,0 +1,8 @@
+.title{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    background-color: blueviolet;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+

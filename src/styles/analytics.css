@@ -1,0 +1,14 @@
+.charts{
+    display: inline-block;
+    
+}
+
+.details-container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.badges{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}

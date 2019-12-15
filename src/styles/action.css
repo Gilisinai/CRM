@@ -1,0 +1,12 @@
+.error{
+    background-color: crimson;
+    color: white;
+    border-radius: 5px;
+    
+}
+
+.success{
+    background-color: lightgreen;
+    color: white;
+    border-radius: 5px;
+}
