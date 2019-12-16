@@ -13,11 +13,17 @@ class OutstandingClients extends Component {
     render() {
         return (
             <div className="badge" >
-                 
+                <div className="outstanding icon">
                 <FontAwesomeIcon icon={faUsers} />
+                </div>
+                <div className="badge-title">
                 <h5>Outstanding Clients</h5>
-                {this.props.clientsData.outstandingClients}
+                </div>
+                <div className="badge-num">
+               {this.props.clientsData.outstandingClients}
+               </div>
             </div>
+            
         )
     }
 }

@@ -22,7 +22,7 @@ import { observer, inject } from 'mobx-react'
         height={200}
         data={this.props.clientsData.sortOwners()}
         margin={{
-          top: 15, right: 20, bottom: 15, left: 20,
+          top: 15, right: 20, bottom: 10, left: 20,
         }}
       >
         <CartesianGrid stroke="#f5f5f5" />

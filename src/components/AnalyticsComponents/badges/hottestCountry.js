@@ -13,10 +13,17 @@ class HottestCountry extends Component {
     render() {
         return (
             <div className="badge" >
-               <FontAwesomeIcon icon={faGlobeEurope} />
-               <h5>Hottest Country</h5>
+                <div className="hottest icon">
+                <FontAwesomeIcon icon={faGlobeEurope} />
+                </div>
+                <div className="badge-title">
+                <h5>Hottest Country</h5>
+                </div>
+                <div className="badge-num">
                {this.props.clientsData.getHottestCountryName()}
+               </div>
             </div>
+            
         )
     }
 }

@@ -1,7 +1,9 @@
 import { observable, action, computed } from 'mobx'
 import { Client } from './client'
 import Moment from 'react-moment';
+import moment from 'moment'
 import axios from 'axios';
+const clientsRoute = "http://localhost:4200/";
 export class ClientsData {
     @observable clients = []
 
@@ -26,8 +28,18 @@ export class ClientsData {
         return hottest.name
     }
 
+    @computed get sellsSince() {
+        let breakdown = []
+        for(let i = 30; i>= 0; i--) {
+            let day = moment().subtract(i, "days").format('DD-MM')
+            breakdown.push({day: day, sells: Math.floor(Math.random() * 15)})
+        }
+        
+        return breakdown
+    }
+
     @action getClientsData = async () => {
-        let clients = await axios.get("http://localhost:4200/")
+        let clients = await axios.get(clientsRoute)
         this.clients = clients.data
 
         return clients
@@ -94,6 +106,7 @@ export class ClientsData {
     }
 
     @action getHottestCountryName = () => {
+        
         let data = this.getCountries()
         let maxSales = Math.max.apply(Math, data.map(function (o) { return o.sales; }))
         let country = data.find(d => d.sales == maxSales)

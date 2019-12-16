@@ -1,0 +1,42 @@
+.badge{
+   display: grid;
+   grid-template-areas: "a b" "a c";
+}
+
+.icon{
+    grid-area: a;
+    width: 55px;
+    height: 55px;
+    padding:10px;
+    border-radius: 50%;
+    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
+    font-size: 40px;
+    color: white;
+    display: inline-block;
+    margin: auto auto;
+}
+
+.badge-title{
+    grid-area: b;
+    display: inline-block;
+    text-align: left;
+}
+
+.badge-num{
+    grid-area: c;
+    text-align: left;
+}
+
+.email{
+    background-color: lightskyblue;
+}
+
+.hottest{
+    background-color: rgb(233, 233, 39);
+}
+.new{
+    background-color: crimson;
+}
+.outstanding{
+    background-color: lightgreen;
+}

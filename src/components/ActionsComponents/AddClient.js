@@ -17,10 +17,10 @@ class AddClient extends Component {
             this.props.inputHandler.country === '' ||
             this.props.inputHandler.owner === '' ||
             this.props.inputHandler.email === ''){
-                toast('All fieldes are required!', { containerId: 'A' , className: 'error'});
+                toast.error('All fieldes are required!', { containerId: 'A' });
             } else {
                 this.props.clientsData.addClient(this.props.inputHandler.newClient, this.props.inputHandler.country, this.props.inputHandler.owner, this.props.inputHandler.email)
-                toast('Client added successfully!', { containerId: 'A' , className: 'success'});
+                toast.success('Client added successfully!', { containerId: 'A' });
             }
             
     }

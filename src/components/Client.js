@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import { observer, inject } from 'mobx-react'
 import '../styles/client.css'
 import Moment from 'react-moment';
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableContainer from '@material-ui/core/TableContainer';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+import Paper from '@material-ui/core/Paper';
 
 @inject("clientsData")
 @observer
@@ -14,6 +21,7 @@ class Client extends Component {
         
         return (
             <div className="client">
+                
                 <div className="client-prop">{name[0]}</div>
                 <div className="client-prop">{name[1]}</div>
                 <div className="client-prop">{client.country}</div>

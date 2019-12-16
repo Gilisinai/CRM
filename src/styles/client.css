@@ -3,4 +3,12 @@
 .client{
     display: grid;
     grid-template-columns: repeat(7,1fr);
+    padding:5px;
+    background-color: white;
+    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.25);
+    margin-bottom: 3px;
+}
+
+.client-prop{
+    border-right: 1px solid lightgray;
 }

@@ -15,10 +15,17 @@ class NewClients extends Component {
         
         return (
             <div className="badge" >
+                <div className="new icon">
                 <FontAwesomeIcon icon={faChartLine} />
+                </div>
+                <div className="badge-title">
                 <h5>New Clients</h5>
-              {this.props.clientsData.newClients}
+                </div>
+                <div className="badge-num">
+               {this.props.clientsData.newClients}
+               </div>
             </div>
+            
         )
     }
 }

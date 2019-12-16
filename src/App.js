@@ -18,12 +18,7 @@ class App extends Component {
     }
   }
 
-  // async getClientsFromDb() {
-  //   await this.props.clientsData.getClientsData()
-  //   // let clients = await axios.get("http://localhost:4200/clients")
-  //   // this.setState({ clients: clients.data })
-  //   // return clients
-  // }
+  
 
   async componentDidMount() {
     const response = await this.props.clientsData.getClientsData()

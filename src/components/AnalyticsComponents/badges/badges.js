@@ -5,18 +5,14 @@ import NewClients from './newClients';
 import EmailsSent from './emailsSent';
 import OutstandingClients from './outstandingClients';
 import HottestCountry from './hottestCountry';
+import '../../../styles/badges.css'
 
 @inject("clientsData")
 @observer
 
 class Badges extends Component {
 
-    // componentDidMount =() =>{
-    //     this.props.clientsData.getClients()
-    // }
-
-    
-    
+      
     
     render() {
         return (

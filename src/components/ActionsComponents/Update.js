@@ -14,31 +14,31 @@ class Update extends Component {
 
     transferOwner = () => {
         if(this.props.inputHandler.clientName === ''){
-            toast('Please choose Client!', { containerId: 'A'  ,className: 'error'});
+            toast.error('Please choose Client!', { containerId: 'A'  });
         }else if (this.props.inputHandler.owner === '') {
-            toast('Please choose owner!', { containerId: 'A' ,className: 'error'});
+            toast.error('Please choose owner!', { containerId: 'A' });
         } else {
             this.props.clientsData.transferOwner(this.props.inputHandler.clientName, this.props.inputHandler.owner)
-            toast('Client transfered !', { containerId: 'A' ,className: 'success'});
+            toast.success('Client transfered !', { containerId: 'A'});
         }
 
     }
 
     sendEmail = () => {
         if (this.props.inputHandler.emailType === '') {
-            toast('Please choose email type!', { containerId: 'A',className: 'error' });
+            toast.error('Please choose email type!', { containerId: 'A'});
         } else {
             this.props.clientsData.sendEmail(this.props.inputHandler.clientName, this.props.inputHandler.emailType)
-            toast('Email sent !', { containerId: 'A' ,className: 'success'});
+            toast.success('Email sent !', { containerId: 'A' });
         }
     }
 
     declareSell = () => {
         if (this.props.inputHandler.clientName === '') {
-            toast('Please choose client!', { containerId: 'A' ,className: 'error'});
+            toast.error('Please choose client!', { containerId: 'A' });
         } else {
             this.props.clientsData.declareSell(this.props.inputHandler.clientName)
-            toast('Sell declared !', { containerId: 'A' ,className: 'success'});
+            toast.success('Sell declared !', { containerId: 'A' });
         }
     }
 
