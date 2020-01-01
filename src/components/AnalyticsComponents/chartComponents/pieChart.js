@@ -17,6 +17,8 @@ export default class Example extends PureComponent {
   
   render() {
     return (
+      <div>
+      <h5> Client Aquizition </h5>
       <PieChart width={730} height={250}>
         <Pie data={data} cx="50%" cy="50%" outerRadius={80} label>
           {
@@ -26,6 +28,7 @@ export default class Example extends PureComponent {
           }
         </Pie>
       </PieChart>
+      </div>
     );
   }
 }
