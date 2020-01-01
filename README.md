@@ -17,16 +17,16 @@ CRM is a Client Ralationship Management system built with React. It includes a g
 
 ### Client List
 An overview of all your clients. .
-<p align="center"><img src="assets/crm-clients.PNG" width="300" /></p>
+<p align="center"><img src="assets/crm-clients.PNG" width="600" /></p>
 
 
 ### Add or Update Client
 Fill out the inputs and then click *add* or *update* to add a new client. When adding/updating a snackbar will popup to confirm success.
-<p align="center"><img src="assets/crm-actions.PNG" width="300" /></p>
+<p align="center"><img src="assets/crm-actions.PNG" width="600" /></p>
 
 ### Analytics Dashboard
 View a report of all the metrics regarding your clients.
-<p align="center"><img src="assets/crm-analytics.PNG" width="300" /></p>
+<p align="center"><img src="assets/crm-analytics.PNG" width="600" /></p>
 
 ## Techstack
 1. React, Recharts,  and Axios.
