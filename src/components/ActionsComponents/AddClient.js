@@ -29,23 +29,34 @@ class AddClient extends Component {
     render() {
         let owners = this.props.clientsData.sortOwners()
         return (
-            <div className="add-client-component" >
+            <div className="add-client-component action" >
                 <h2>Add Client</h2>
-                <div>  Full Name: <input type="text" id="newClient" name="newClient"
+                <div className="client-grid">
+                <div className="field">  Full Name: </div>
+                 <div>   
+                    <input type="text" className="action-input" id="newClient" name="newClient"
                     onChange={this.inputHandler} value={this.props.inputHandler.newClient} />
                 </div>
 
-                <div>  Country: <input type="text" id="newCountry" name="country"
+                <div className="field">  Country: </div>
+                <div> 
+                    <input type="text" className="action-input" id="newCountry" name="country"
                     onChange={this.inputHandler} value={this.props.inputHandler.country} />
                 </div>
-                <div>  Owner: <input type="text" id="ownerrrr" name="owner" list="owners"
+                <div className="field">  Owner: </div>
+                <div> 
+                    <input type="text" className="action-input" id="ownerrrr" name="owner" list="owners"
                     onChange={this.inputHandler} value={this.props.inputHandler.owner} />
                     <datalist id="owners"> {owners.map((c, i) => <option key={i} >{c.name}</option>)} </datalist>
                 </div>
-                <div>  Email: <input type="text" id="email" name="email"
+                <div className="field">  Email: </div>
+                <div> 
+                    <input type="text" className="action-input" id="email" name="email"
                     onChange={this.inputHandler} value={this.props.inputHandler.email} />
                 </div>
-                <button onClick={this.addNewClient}>Add New Client</button>
+                </div>
+                <button onClick={this.addNewClient} className="action-button">Add New Client</button>
+                
                 <ToastContainer enableMultiContainer containerId={'A'} position={toast.POSITION.BOTTOM_LEFT} />
             </div>
         )
