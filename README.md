@@ -26,7 +26,7 @@ Fill out the inputs and then click *add* or *update* to add a new client. When a
 
 ### Analytics Dashboard
 View a report of all the metrics regarding your clients.
-<p align="center"><img src="assets/crm-analytics.PNG" width="600" /></p>
+<p align="center"><img src="assets/client-analytics.PNG" width="600" /></p>
 
 ## Techstack
 1. React, Recharts,  and Axios.
